@@ -1,0 +1,30 @@
+<html>
+    <head><h2>Arrays and Strings</h2></head>
+    <body>
+        <script>
+            const cars=["Saab","Volvo","BMW","RangeRover","Audi"];
+            cars[0]="Opel";
+            cars.push("ABC");
+            document.write("Arrays :<br>".fontcolor("Green"));
+            document.write(cars);
+            document.write("<br>");
+            const bike=["maruthi","splash","shine"];
+            const vehicle=cars.concat(bike);
+            document.write(vehicle);
+            document.write ("<br>");
+            document.write("length is "+vehicle.length);
+            document.write ("<br>");
+            document.write("String methods:".fontcolor("Green"));
+            let text = "HELLO WORLD";
+            let letter = text.charAt(0);
+            document.write ("<br>");
+            document.write(text.search("HE"));
+            document.write ("<br>");
+            document.write(letter);
+            document.write ("<br>");
+            document.write(text.toLowerCase());
+            document.write ("<br>");
+            document.write(text.fontcolor("red"));
+        </script>
+    </body>
+</html>

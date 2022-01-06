@@ -1,0 +1,21 @@
+<html>
+    <head>"DOM Elements and Events"</head>
+    
+    <p id="intro">getElementById method</p>
+    <p class="intro">SELECTORS</p>
+    <p class="intro">second selector line</p>
+    <h2>Finding HTML Elements by Tag Name.</h2>
+    <h2>getElementsByTagName method</h2>
+    <body>
+        <p>third line in id </p>
+        <p id="demo"></p>
+        <script>
+            const element = document.getElementById("intro");
+            document.getElementById("intro").innerHTML="output is "+element.innerHTML;
+            const ele = document.getElementsByTagName("h2");
+            document.getElementById("demo").innerHTML = 'The text in first h2 tag (index 0) is: ' + ele[0].innerHTML;
+            const x = document.querySelectorAll("p.intro");
+            document.getElementById("demo").innerHTML = 'The first paragraph (index 1) with class="intro" is: ' + x[1].innerHTML;
+        </script>
+    </body>
+</html>
